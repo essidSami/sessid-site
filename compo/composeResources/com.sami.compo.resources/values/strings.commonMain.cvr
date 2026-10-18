@@ -145,6 +145,10 @@ string|remove_short|UmV0aXJlcg==
 string|remove|UmV0aXJlciBkZSBsJ2VmZmVjdGlm
 string|resume_match|UmVwcmVuZHJlIGxlIG1hdGNo
 string|retry|UsOpZXNzYXllcg==
+string|review_all_close|RmVybWVyIGxhIHLDqXZpc2lvbiBkZXMgbm90ZXM=
+string|review_all_hint|UsOpdmlzaW9uIGfDqW7DqXJhbGUgb3V2ZXJ0ZSBqdXNxdSdhdSAlMSRzIMOgICUyJHMgOiB0dSBwZXV4IHJldm9pciB0b3V0ZXMgdGVzIG5vdGVzLCBwb3VyIHRvdXMgbGVzIGpvdWV1cnMu
+string|review_all_open|T3V2cmlyIGxlcyBub3RlcyDDoCB0b3Vz
+string|review_all_until|UsOpdmlzaW9uIGRlcyBub3RlcyBvdXZlcnRlIGp1c3F1J2F1ICUxJHMgw6AgJTIkcywgbGEgdmVpbGxlIGR1IG1hdGNoLg==
 string|review_hint|VHUgcGV1eCByZXZvaXIgbGVzIG5vdGVzIGRlcyBqb3VldXJzIGRlIHRvbiBtYXRjaCBqdXNxdSdhdSAlMSRzIMOgICUyJHMsIMOgIGwnb3V2ZXJ0dXJlIGRlcyBpbnNjcmlwdGlvbnMu
 string|review_title|VG9uIGRlcm5pZXIgbWF0Y2g=
 string|role_admin|T3JnYW5pc2F0ZXVy
@@ -152,6 +156,9 @@ string|role_player|Sm91ZXVy
 string|role_scorer|TWFycXVldXI=
 string|role_super_admin|QWRtaW4=
 string|role_visitor|VmlzaXRldXI=
+string|rowdy_add|TWFycXVlciAlMSRzIGNoYWh1dGV1cg==
+string|rowdy_count|Q2hhaHV0ZXVyIDogJTEkcyBmb2lz
+string|rowdy_remove|UmV0aXJlciBsYSBtYXJxdWUgZGUgY2hhaHV0ZXVyIGRlICUxJHM=
 string|saved|RW5yZWdpc3Ryw6k=
 string|save|RW5yZWdpc3RyZXI=
 string|score_line|JTEkcyAlMiRzIOKAkyAlMyRzICU0JHM=
@@ -189,6 +196,8 @@ string|stats_goals|QnV0cw==
 string|stats_legend|TUogbWF0Y2hzIGpvdcOpcyDCtyBWIHZpY3RvaXJlcyDCtyBOIG51bHMgwrcgRCBkw6lmYWl0ZXM=
 string|stats_losses|RA==
 string|stats_played|TUo=
+string|stats_rowdy_legend|Q2guIG1hcnF1w6kgY2hhaHV0ZXVyICh2aXNpYmxlIHBhciBsJ2VuY2FkcmVtZW50KQ==
+string|stats_rowdy|Q2gu
 string|stats_title|U3RhdGlzdGlxdWVz
 string|stats_wins|Vg==
 string|tab_match|TWF0Y2g=
