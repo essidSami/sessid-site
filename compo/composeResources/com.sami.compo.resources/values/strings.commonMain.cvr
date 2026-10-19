@@ -135,6 +135,7 @@ string|profile_title|TW9uIHByb2ZpbA==
 string|proposal_choose|Q2hvaXNpciBsYSBwcm9wb3NpdGlvbiAlMSRz
 string|proposal_my_vote|VG9uIHZvdGUgOiBsYSBwcm9wb3NpdGlvbiAlMSRz
 string|proposal_number|UHJvcG9zaXRpb24gJTEkcw==
+string|proposal_remade|Tm91dmVsbGUgcHJvcG9zaXRpb24gOiBsYSBsaXN0ZSBkZXMgdGl0dWxhaXJlcyBhIGNoYW5nw6ku
 string|proposal_vote|Vm90ZXIgcG91ciBsYSBwcm9wb3NpdGlvbiAlMSRz
 string|proposals_banner_not_voted|VHUgbidhcyBwYXMgZW5jb3JlIHZvdMOpIDogY2hvaXNpcyB0YSBwcm9wb3NpdGlvbiBwcsOpZsOpcsOpZS4=
 string|proposals_banner_see|Vm9pciBsZXMgcHJvcG9zaXRpb25z
@@ -176,6 +177,7 @@ string|remove_confirm|UmV0aXJlciAlMSRzIGRlIGwnZWZmZWN0aWYgPw==
 string|remove_goal|UmV0aXJlciB1biBidXQgw6AgJTEkcw==
 string|remove_short|UmV0aXJlcg==
 string|remove|UmV0aXJlciBkZSBsJ2VmZmVjdGlm
+string|replacement_line|JTEkcyByZW1wbGFjZSAlMiRz
 string|resume_match|UmVwcmVuZHJlIGxlIG1hdGNo
 string|retry|UsOpZXNzYXllcg==
 string|review_all_close|RmVybWVyIGxhIHLDqXZpc2lvbiBkZXMgbm90ZXM=
