@@ -2,18 +2,101 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Pas de zoom : on touche des boutons, on ne lit pas une page. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="theme-color" content="#FFE14D">
+    <meta name="description" content="Le foot à 6 du vendredi : inscriptions, équipes, score en direct et homme du match.">
+    <!-- Ajoutée à l'écran d'accueil d'un iPhone, Compo s'ouvre en plein écran, comme une app. -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Compo">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <title>Compo</title>
     <!-- La même icône que l'app Android : l'étoile tomate et le ballon sur le fond à pois. -->
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="manifest" href="manifest.webmanifest">
     <style>
-        html, body { height: 100%; margin: 0; overflow: hidden; background: #FFE14D; }
+        html, body {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+            background: #FFE14D;
+            /* Comme une app : pas de rebond au bout du défilement, pas de zoom au double toucher,
+               pas de flash gris au toucher. */
+            overscroll-behavior: none;
+            touch-action: manipulation;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        /* L'emplacement de l'app : toute la fenêtre. */
+        #app { position: fixed; inset: 0; }
+
+        /* L'aide à l'installation sur iPhone : un encart en bas, aux couleurs de l'app. */
+        #install-hint {
+            position: fixed;
+            left: 12px;
+            right: 12px;
+            bottom: calc(12px + env(safe-area-inset-bottom));
+            z-index: 10;
+            display: none;
+            padding: 14px 44px 14px 16px;
+            background: #FFFFFF;
+            border: 3px solid #141414;
+            border-radius: 18px;
+            box-shadow: 5px 5px 0 #141414;
+            font: 15px/1.4 -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+            color: #141414;
+        }
+        #install-hint strong { font-weight: 800; }
+        #install-hint .share {
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            vertical-align: -3px;
+        }
+        #install-hint button {
+            position: absolute;
+            top: 6px;
+            right: 6px;
+            width: 34px;
+            height: 34px;
+            border: 0;
+            background: none;
+            font-size: 22px;
+            line-height: 34px;
+            color: #141414;
+        }
     </style>
 </head>
 <body>
+<div id="app"></div>
+<div id="install-hint" role="dialog" aria-label="Installer Compo">
+    <strong>Installe Compo sur ton iPhone</strong><br>
+    Touche
+    <svg class="share" viewBox="0 0 24 24" fill="none" stroke="#141414" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-label="Partager"><path d="M4 12v7a1 1 0 001 1h14a1 1 0 001-1v-7M16 6l-4-4-4 4M12 2v13"/></svg>
+    en bas de Safari, puis <strong>« Sur l'écran d'accueil »</strong>. Compo s'ouvrira en plein écran, comme une app.
+    <button type="button" aria-label="Fermer">×</button>
+</div>
+<script>
+    // L'aide à l'installation : sur iPhone ou iPad, dans Safari, tant que Compo n'est pas sur
+    // l'écran d'accueil et qu'on ne l'a pas fermée. Le choix est gardé sur le téléphone.
+    (function () {
+        var KEY = "compo-install-hint-closed";
+        var hint = document.getElementById("install-hint");
+        var ios = /iPhone|iPad|iPod/.test(navigator.userAgent) ||
+            (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+        var installed = window.navigator.standalone === true ||
+            window.matchMedia("(display-mode: standalone)").matches;
+        var closed = false;
+        try { closed = localStorage.getItem(KEY) === "1"; } catch (e) {}
+        if (ios && !installed && !closed) hint.style.display = "block";
+        hint.querySelector("button").addEventListener("click", function () {
+            hint.style.display = "none";
+            try { localStorage.setItem(KEY, "1"); } catch (e) {}
+        });
+    })();
+</script>
 <!-- En fin de page : l'application se pose dans <body>, qui doit exister quand le script part. -->
 <script src="web.js"></script>
 </body>

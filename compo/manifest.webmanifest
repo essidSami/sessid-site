@@ -1,8 +1,13 @@
 {
+  "id": "/compo/",
   "name": "Compo",
   "short_name": "Compo",
+  "description": "Le foot à 6 du vendredi : inscriptions, équipes, score en direct et homme du match.",
+  "lang": "fr",
   "start_url": ".",
+  "scope": ".",
   "display": "standalone",
+  "orientation": "portrait",
   "background_color": "#FFE14D",
   "theme_color": "#FFE14D",
   "icons": [
