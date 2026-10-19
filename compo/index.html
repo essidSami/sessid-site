@@ -29,8 +29,10 @@
             -webkit-tap-highlight-color: transparent;
         }
 
-        /* L'emplacement de l'app : toute la fenêtre. */
-        #app { position: fixed; inset: 0; }
+        /* L'emplacement de l'app : toute la fenêtre. Les glissés sont pour Compose : sans
+           touch-action: none, le navigateur les garde pour lui (barre d'adresse, défilement
+           de la page) et annule le geste — la liste ne bougeait que de quelques pixels. */
+        #app { position: fixed; inset: 0; touch-action: none; }
 
         /* L'aide à l'installation sur iPhone : un encart en bas, aux couleurs de l'app. */
         #install-hint {
