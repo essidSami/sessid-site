@@ -241,6 +241,9 @@ string|stats_losses|RA==
 string|stats_played|TUo=
 string|stats_rowdy_legend|Q2guIG1hcnF1w6kgY2hhaHV0ZXVyICh2aXNpYmxlIHBhciBsJ2VuY2FkcmVtZW50KQ==
 string|stats_rowdy|Q2gu
+string|stats_tiebreak_played|MS4gbGUgbW9pbnMgZGUgbWF0Y2hzIGpvdcOpcyAoTUop
+string|stats_tiebreak_title|w4Agw6lnYWxpdMOpIGRlIGJ1dHMgOg==
+string|stats_tiebreak_wins|Mi4gcHVpcyBsZSBwbHVzIGRlIHZpY3RvaXJlcyAoVik=
 string|stats_title|U3RhdGlzdGlxdWVz
 string|stats_wins|Vg==
 string|tab_match|TWF0Y2g=
