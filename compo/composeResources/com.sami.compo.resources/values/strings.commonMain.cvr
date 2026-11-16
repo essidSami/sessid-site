@@ -162,6 +162,8 @@ string|pots_title|TGVzIHBvdHM=
 string|profile_saved|UHJvZmlsIGVucmVnaXN0csOp
 string|profile_title|TW9uIHByb2ZpbA==
 string|proposal_choose|Q2hvaXNpciBsYSBwcm9wb3NpdGlvbiAlMSRz
+string|proposal_edit_title|UHJvcG9zaXRpb24gJTEkcw==
+string|proposal_edit|TW9kaWZpZXIgbGEgcHJvcG9zaXRpb24gJTEkcw==
 string|proposal_my_vote|VG9uIHZvdGUgOiBsYSBwcm9wb3NpdGlvbiAlMSRz
 string|proposal_number|UHJvcG9zaXRpb24gJTEkcw==
 string|proposal_remade|Tm91dmVsbGUgcHJvcG9zaXRpb24gOiBsYSBsaXN0ZSBkZXMgdGl0dWxhaXJlcyBhIGNoYW5nw6ku
