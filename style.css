@@ -49,7 +49,7 @@ header.site nav a:hover{color:var(--ink)}
 .links a:hover{background:var(--accent);color:#fff}
 .links a.play{background:var(--accent);color:#fff}
 .links a.play:hover{filter:brightness(1.1)}
-.app.road{--accent:var(--road)} .app.flags{--accent:var(--sky)} .app.fan-app{--accent:var(--teal)}
+.app.road{--accent:var(--road)} .app.flags{--accent:var(--sky)} .app.fan-app{--accent:var(--teal)} .app.match{--accent:var(--orange)}
 @media (max-width:520px){
   .app{grid-template-columns:76px 1fr;gap:1rem;padding:1rem;align-items:start}
   .app img{width:76px;height:76px;border-radius:18px}
